@@ -6,6 +6,8 @@ def solution(line):
     x_min = y_min = int(1e15)
     x_max = y_max = -int(1e15)
     
+    # loop through all possible cases 
+    # e.g. 0 -> 1,2,3,... n and then 1 -> 2,3,...n 
     for i in range(n):
         a, b, e = line[i]
         for j in range(i + 1, n):
